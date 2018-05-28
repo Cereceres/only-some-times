@@ -21,4 +21,22 @@ describe('test to wrapper', () => {
             assert(error);
         }
     });
+
+    it('should return a function', () => {
+        let called = 0;
+        const wrapped = wrapper(() => called++, 3);
+        wrapped();
+        wrapped();
+        wrapped();
+        wrapped();
+        wrapped();
+        assert(called === 3);
+        assert(wrapped.cbIsCalled === 3);
+        wrapped.reset();
+        wrapped();
+        wrapped();
+        wrapped();
+        assert(called === 6);
+        assert(wrapped.cbIsCalled === 3);
+    });
 });
