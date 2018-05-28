@@ -1,0 +1,25 @@
+{
+  "name": "only-some-times",
+  "version": "0.0.1",
+  "description": "wrapper to function, check that functions is called only some times given",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cereceres/only-some-times.git"
+  },
+  "keywords": [
+    "some",
+    "times",
+    "wrapper",
+    "function"
+  ],
+  "author": "Jesus Cereceres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cereceres/only-some-times/issues"
+  },
+  "homepage": "https://github.com/Cereceres/only-some-times#readme"
+}
