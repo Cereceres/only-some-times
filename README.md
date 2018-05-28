@@ -15,4 +15,7 @@ wrapped();
 assert(called === 3);
 wrapped.cbIsCalled === 3 // true
 ```
- 
+
+# API onlySomeTimes(cb,[times, joiSchema]) -> cbWrapped
+
+If joiSchema is given the arguments is validated before the cb is called.

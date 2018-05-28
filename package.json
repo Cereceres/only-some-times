@@ -1,6 +1,6 @@
 {
   "name": "only-some-times",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "wrapper to function, check that functions is called only some times given",
   "main": "index.js",
   "scripts": {
@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/Cereceres/only-some-times/issues"
   },
-  "homepage": "https://github.com/Cereceres/only-some-times#readme"
+  "homepage": "https://github.com/Cereceres/only-some-times#readme",
+  "dependencies": {
+    "joi": "^13.3.0"
+  }
 }

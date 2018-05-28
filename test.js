@@ -1,5 +1,4 @@
 const assert = require('assert');
-
 const wrapper = require('./index');
 
 describe('test to wrapper', () => {
