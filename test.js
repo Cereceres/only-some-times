@@ -12,6 +12,7 @@ describe('test to wrapper', () => {
         wrapped();
         wrapped();
         assert(called === 3);
+        assert(wrapped.cbIsCalled === 3);
     });
 
     it('should return a function', () => {
