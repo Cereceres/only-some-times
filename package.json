@@ -1,6 +1,6 @@
 {
   "name": "only-some-times",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "wrapper to function, check that functions is called only some times given",
   "main": "index.js",
   "scripts": {
