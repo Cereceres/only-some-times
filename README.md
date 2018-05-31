@@ -1,5 +1,5 @@
 # only-some-times
-wrap function to be spied if called some times
+wrap function to be spied if called some times, return the same value like other function and accept the same arguments
 
 # Usage
 
@@ -43,9 +43,9 @@ try {
 }
 ```
 
-# API onlySomeTimes(cb,[times, joiSchema]) -> cbWrapped
+# API onlySomeTimes(cb,[times, joiSchema, errorHandlerBadParams]) -> cbWrapped
 
-If joiSchema is given the arguments is validated before the cb is called.
+If joiSchema is given the arguments is validated before the cb is called, if there are any error in validate params and errorHandlerBadParams is not given the error is thrown.
 
 ## onlySomeTimes.cbIsCalled -> number
 number <= times

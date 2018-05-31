@@ -52,4 +52,10 @@ describe('test to wrapper', () => {
             done()
         }
     });
+
+    it('should return a function', () => {
+        const wrapped = wrapper(() => 'somevalue')
+        const res = wrapped()
+        assert( res === 'somevalue')
+    });
 });
