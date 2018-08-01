@@ -42,9 +42,7 @@ describe('test to wrapper', () => {
 
     it('should return a function', (done) => {
         let called = 0;
-        const schema  = joi.object().keys({
-            0: joi.array()
-        })
+        const schema  = joi.array().ordered(joi.array())
         const wrapped = wrapper(() => called++, 3, schema);
         try {
             wrapped('string');
